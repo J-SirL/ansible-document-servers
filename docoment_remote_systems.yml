@@ -1,5 +1,10 @@
 ---
-- name: Create server documentation
-  hosts: all
+- name: Create server documentation for prod and mombasa_one_dc
+  hosts: 'prod,&mombasa_one_dc'
+  roles:
+    - ansible-document-servers
+
+- name: Create server documentation for prod and nairobi_one_dc
+  hosts: 'prod,&nairobi_one_dc'
   roles:
     - ansible-document-servers
