@@ -1,0 +1,16 @@
+---
+all:
+  children:
+    mombasa_one_dc:
+      hosts:
+        lab-one.sitedevelopments.lan:
+    nairobi_one_dc:
+      hosts:
+        lab-two.sitedevelopments.lan:
+    prod:
+      hosts:
+        lab-one.sitedevelopments.lan:
+        lab-two.sitedevelopments.lan:
+        lab-three.sitedevelopments.lan:
+        lab-four.sitedevelopments.lan:
+    ungrouped: {}

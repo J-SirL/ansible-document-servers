@@ -1,0 +1,5 @@
+---
+- name: Create server documentation
+  hosts: all
+  roles:
+    - ansible-document-servers
